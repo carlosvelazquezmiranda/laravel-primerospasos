@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/custom', function () {
+    $msj = "Hola estoy probando Laravel";
+    $data = ['msj'=>$msj , 'edad'=>15 ];
+    return view('custom',$data);
+});
