@@ -24,5 +24,13 @@ class TestController extends Controller
        // echo ("Hola desde el controlador");
        return view('welcome',['user' => $user ]);
     }
+
+    function UsandoCompact(){
+        //Se puede usar la variable compact para evitar los arreglos 'usuarios'=> $usuarios
+        $user =  User::find(1);
+        $var2 = "Este es otro parametro";
+        return view('welcome',compact('user','var2'));
+
+    }
     
 }

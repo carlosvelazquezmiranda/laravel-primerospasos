@@ -1,3 +1,4 @@
+@include("bootstrap")
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +8,7 @@
     <title>Probando los componentes de la plantilla BLADE</title>
 </head>
 <body>
+    @include("encabezado.menu")
 
     <p>Esta es una impresion de datos</p>
     <p>Nombre : {{ $user->name }} </p>
