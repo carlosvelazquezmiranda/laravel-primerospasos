@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('Nombre', 250);
             $table->bigInteger('edad');
             $table->dateTime('fecha_cumpleanios', $precision = 0);
+            $table->string('imagen', 250);
         });
     }
 
